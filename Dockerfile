@@ -24,7 +24,7 @@ RUN apk add --no-cache libc6-compat tzdata curl \
 && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN mkdir -p /app/configs
 
-COPY --from=build-env ./opssentry /app/
+COPY --from=build-env /workspace/opssentry /app/
 
 RUN ls /app/
 
