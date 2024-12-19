@@ -31,4 +31,4 @@ RUN ls /app/
 
 WORKDIR /app
 
-ENTRYPOINT ["./opssentry","-c","./configs/miniblog.yaml"]
+ENTRYPOINT ["./opssentry"]
